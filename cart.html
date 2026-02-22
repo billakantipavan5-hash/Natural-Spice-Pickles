@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cart - 🌿🥭 Natural Spice Pickles 🌶️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="main-header">
+  <h1>Your Cart</h1>
+  <a href="index.html" class="cart-btn">⬅ Back</a>
+</header>
+
+<div class="cart-container" id="cartItems"></div>
+<h2 id="total"></h2>
+
+<button class="order-btn" onclick="sendWhatsApp()">
+  Confirm Order via WhatsApp
+</button>
+
+<script>
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+function displayCart(){
+  let container = document.getElementById("cartItems");
+  container.innerHTML = "";
+  let total = 0;
+
+  cart.forEach((item, index) => {
+    total += item.price;
+
+    container.innerHTML += `
+      <div class="cart-item">
+        <img src="${item.image}" class="cart-img">
+        <div>
+          <h3>${item.name}</h3>
+          <p>${item.grams}g - ₹${item.price}</p>
+          <button onclick="removeItem(${index})">Delete</button>
+        </div>
+      </div>
+    `;
+  });
+
+  document.getElementById("total").innerText = "Total: ₹" + total;
+}
+
+function removeItem(index){
+  cart.splice(index, 1);
+  localStorage.setItem("cart", JSON.stringify(cart));
+  displayCart();
+}
+
+function sendWhatsApp(){
+  let phone = "9391990445"; 
+  let message = "Order Details:%0A"; 
+  
+  message = "Hello, I would like to Order your Homemade Pickles  "; 
+  let total = 0;
+
+  cart.forEach(item => {
+    message += item.name + " - " + item.grams + "g - ₹" + item.price + "%0A";
+    total += item.price;
+  });
+
+  message += "%0ATotal: ₹" + total;
+
+  window.open(`https://wa.me/${phone}?text=${message}`);
+}
+
+displayCart();
+</script>
+<div class="bottom-nav">
+  <a href="index.html" class="nav-item2">
+    
+    <p>Home</p>
+  </a>
+
+  <a href="cart.html" class="nav-item2">
+   
+    <p>Cart</p>
+  </a>
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Natural  Pickles</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header class="main-header">
+  <div class="logo-title">
+    <img src="logo png1.jpeg" alt="Pickle Logo" class="site-logo">
+    <h1>Natural Spice Pickles</h1>
+  </div>  
+</header>
+<nav id="pavan"><h1>Non-Veg Pickles</h1></nav>
+<section class="products">
+
+  <!-- Chicken -->
+  <div class="card">
+    <img src="chicken.jpg"
+         class="product-img">
+
+    <h3>Chicken Pickle</h3>
+
+    <select id="chickenSelect">
+      <option value="250-200">250g - ₹200</option>
+      <option value="500-350">500g - ₹350</option>
+      <option value="1000-600">1000g - ₹600</option>
+    </select>
+
+    <button onclick="addToCart(
+      'Chicken Pickle',
+      'chickenSelect',
+      'chicken.jpg'
+    )">Add to Cart</button>
+  </div>
+
+  <!-- Mutton -->
+  <div class="card">
+    <img src="Muttonpickle.webp"
+         class="product-img">
+
+    <h3>Mutton Pickle</h3>
+
+    <select id="muttonSelect">
+      <option value="250-400">250g - ₹400</option>
+      <option value="500-750">500g - ₹750</option>
+      <option value="1000-1350">1000g - ₹1350</option>
+    </select>
+
+    <button onclick="addToCart(
+      'Mutton Pickle',
+      'muttonSelect',
+      'Muttonpickle.webp'
+    )">Add to Cart</button>
+  </div>
+  <!-- Chicken -->
+  <div class="card">
+    <img src="fish.jpg"
+         class="product-img">
+
+    <h3>Fish Pickle</h3>
+
+    <select id="chicken1Select">
+      <option value="250-150">250g - ₹150</option>
+      <option value="500-300">500g - ₹300</option>
+      <option value="1000-550">1000g - ₹550</option>
+    </select>
+
+    <button onclick="addToCart(
+      'Fish Pickle',
+      'chicken1Select',
+      'fish.jpg'
+    )">Add to Cart</button>
+  </div>
+  <!-- Chicken -->
+  <div class="card">
+    <img src="prawns.webp"
+         class="product-img">
+
+    <h3>prawns Pickle</h3>
+
+    <select id="chicken2Select">
+      <option value="250-450">250g - ₹450</option>
+      <option value="500-900">500g - ₹900</option>
+      <option value="1000-1600">1000g - ₹1600</option>
+    </select>
+
+    <button onclick="addToCart(
+      'Prawns Pickle',
+      'chicken2Select',
+      'prawns.webp'
+    )">Add to Cart</button>
+  </div>
+  <!-- Chicken -->
+  <div class="card">
+    <img src="Gongura-Prawn-Pickle.webp"
+         class="product-img">
+
+    <h3> Gongura prawns Pickle</h3>
+
+    <select id="chicken3Select">
+      <option value="250-450">250g - ₹450</option>
+      <option value="500-900">500g - ₹900</option>
+      <option value="1000-1600">1000g - ₹1600</option>
+    </select>
+
+    <button onclick="addToCart(
+      'Gongura Prawns Pickle',
+      'chicken3Select',
+      'Gongura-Prawn-Pickle.webp'
+    )">Add to Cart</button>
+  </div>
+  <!-- Chicken -->
+  <div class="card">
+    <img src="Gongura_mutton_pickle1.webp"
+         class="product-img">
+
+    <h3>Gongura Mutton Pickle</h3>
+
+    <select id="chicken4Select">
+      <option value="250-400">250g - ₹400</option>
+      <option value="500-700">500g - ₹700</option>
+      <option value="1000-1200">1000g - ₹1200</option>
+    </select>
+
+    <button onclick="addToCart(
+      'Gongura Mutton Pickle',
+      'chicken4Select',
+      'Gongura_mutton_pickle1.webp'
+    )">Add to Cart</button>
+  </div>
+</section>
+<nav id="pavan"><h1>Veg Pickles</h1></nav>
+<section class="products">
+  
+  <!-- Chicken -->
+  <div class="card">
+    <img src="Mango.webp"
+         class="product-img">
+
+    <h3>Avakaya(Mango) Pickle</h3>
+
+    <select id="chicken5Select">
+      <option value="250-200">250g - ₹200</option>
+      <option value="500-350">500g - ₹350</option>
+      <option value="1000-600">1000g - ₹600</option>
+    </select>
+
+    <button onclick="addToCart(
+      'Avakaya(Mango) Pickle',
+      'chicken5Select',
+      'Mango.webp'
+    )">Add to Cart</button>
+  </div>
+<!-- Chicken -->
+  <div class="card">
+    <img src="Gongura.webp"
+         class="product-img">
+
+    <h3>Gongura Pickle</h3>
+
+    <select id="chicken6Select">
+      <option value="250-80">250g - ₹80</option>
+      <option value="500-140">500g - ₹140</option>
+      <option value="1000-250">1000g - ₹250</option>
+    </select>
+
+    <button onclick="addToCart(
+      'Gongura Mutton Pickle',
+      'chicken6Select',
+      'Gongura.webp'
+    )">Add to Cart</button>
+  </div>
+  <!-- Chicken -->
+  <div class="card">
+    <img src="lemon.webp"
+         class="product-img">
+
+    <h3>Lemon Pickle</h3>
+
+    <select id="chicken7Select">
+      <option value="250-80">250g - ₹80</option>
+      <option value="500-140">500g - ₹140</option>
+      <option value="1000-250">1000g - ₹250</option>
+    </select>
+
+    <button onclick="addToCart(
+      'Lemon Pickle',
+      'chicken7Select',
+      'lemon.webp'
+    )">Add to Cart</button>
+  </div>
+  <!-- Chicken -->
+  <div class="card">
+    <img src="tomato.webp"
+         class="product-img">
+
+    
+
+    <select id="chicken8Select">
+      <option value="250-60">250g - ₹60</option>
+      <option value="500-100">500g - ₹100</option>
+      <option value="1000-150">1000g - ₹150</option>
+    </select>
+
+    <button onclick="addToCart(
+      'Tomato Pickle',
+      'chicken8Select',
+      'tomato.webp'
+    )">Add to Cart</button>
+  </div>
+</section>
+
+<script>
+function addToCart(name, selectId, image){
+  let select = document.getElementById(selectId);
+  let data = select.value.split("-");
+  let grams = data[0];
+  let price = parseInt(data[1]);
+
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  cart.push({
+    name: name,
+    grams: grams,
+    price: price,
+    image: image
+  });
+
+  localStorage.setItem("cart", JSON.stringify(cart));
+  alert("Added to cart");
+}
+</script>
+<footer>
+   <p>🫙🥭 Natural Spice Pickles 🌶️</p>
+  <p>Authentic Homemade Pickles | Made with Love ❤️</p>
+ <!-- Bottom Navigation -->
+<div class="bottom-nav">
+  <a href="index.html" class="nav-item">
+    
+    <p>Home</p>
+  </a>
+
+  <a href="cart.html" class="nav-item">
+   
+    <p>Cart</p>
+  </a>
+</div>
+
+</footer>
+
+</body>
+</html
