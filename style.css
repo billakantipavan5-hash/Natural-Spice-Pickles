@@ -242,9 +242,7 @@ footer p{
 .nav-item:hover {
   background-color: blue;
 }
-.nav-item2:hover {
-  background-color: blue;
-}
+
 
 /* Body bottom space adjust */
 body {

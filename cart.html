@@ -54,7 +54,7 @@ function sendWhatsApp(){
   let phone = "9391990445"; 
   let message = "Order Details:%0A"; 
   
-  message = "Hello, I would like to Order your Homemade Pickles  "; 
+  message += "Hello, I would like to Order your Homemade Pickles %0A"; 
   let total = 0;
 
   cart.forEach(item => {
@@ -63,6 +63,7 @@ function sendWhatsApp(){
   });
 
   message += "%0ATotal: ₹" + total;
+   
 
   window.open(`https://wa.me/${phone}?text=${message}`);
 }
